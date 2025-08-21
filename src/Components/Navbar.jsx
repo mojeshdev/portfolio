@@ -32,7 +32,7 @@ export default function Navbar() {
         </div>
 
       {/* Mobile Navbar */}
-        <div className="fixed bottom-0 left-0 w-full bg-yellow-500 px-4 py-3 shadow-2xl flex justify-around items-center lg:hidden z-50">
+        <div className="fixed bottom-0 left-0 w-full bg-yellow-500 px-4 -py-1 shadow-2xl flex justify-around items-center lg:hidden z-50">
         {navItems.map(({ to, icon: Icon }) => (
             <NavLink key={to} to={to}>
             <div className="text-white p-2">

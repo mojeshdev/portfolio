@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Tooltip = () => {
     return (
     <StyledWrapper>
-        <ul className="example-2 -ml-80 mt-12 mx-auto">
+        <ul className="example-2 mt-12 mx-auto flex justify-center flex-wrap gap-6">
             <li className="icon-content">
             <a data-social="whatsapp" aria-label="Whatsapp" href="https://signal.me/#eu/ttLziVPAZFe_kMjoItAez2ktLd9gaavkFfQTu9ACGqqmoadsQj5DZrwwu-uKT3vw">
             <div className="filled" />
