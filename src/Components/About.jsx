@@ -58,13 +58,13 @@ export default function About() {
         </div>
 
       {/* My Skills */}
-        <h1 className="text-3xl font-extrabold text-center mb-12">My Skills</h1>
+        <h1 className="text-3xl font-extrabold text-center mb-12">My <span className='font-sans text-yellow-400'>Skills</span></h1>
         <div className="flex justify-center mb-16">
         <Circularbars />
         </div>
 
       {/* Education Details */}
-        <h1 className="text-3xl font-extrabold text-center mb-12">Education Details</h1>
+        <h1 className="text-3xl font-extrabold text-center mb-8">Education<span className='font-sans text-yellow-400'> Details</span></h1>
         <div className="grid sm:grid-cols-2 gap-8">
         <EducationCard
             year="2018"
@@ -104,7 +104,7 @@ const StatBox = ({ value, label }) => (
 
 // Education Item Component
 const EducationCard = ({ year, level, institution, description }) => (
-    <div className="relative border border-gray-700 p-6 w-full rounded-lg bg-[#1a1a1a] shadow-md hover:shadow-xl transition-shadow">
+    <div className="relative border border-gray-700 p-6 w-full mb-5 rounded-lg bg-[#1a1a1a] shadow-md hover:shadow-xl transition-shadow">
     <div className="flex items-center gap-4 mb-4">
         <div className="w-12 h-12 p-3 rounded-full bg-yellow-500 flex items-center justify-center">
         <LeafyGreen />
