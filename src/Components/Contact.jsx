@@ -82,13 +82,15 @@ export default function Contact() {
                 type="text"
                 required
                 placeholder="Your name"
-                className="w-full h-12 bg-[#8e808042] border-b border-slate-700 placeholder-white text-white p-3 sm:p-4 text-sm sm:text-base outline-none"
+                className="w-full h-12 bg-[#8e808042] border-b border-slate-700 placeholder-white text-white p-3 sm:p-4 text-sm sm:text-base outline-none focus:outline-white
+                transition-all duration-300 focus:placeholder-transparent"
             />
             <input
                 type="email"
                 required
                 placeholder="Your email"
-                className="w-full h-12 bg-[#8e808042] border-b border-slate-700 placeholder-white text-white p-3 sm:p-4 text-sm sm:text-base outline-none"
+                className="w-full h-12 bg-[#8e808042] border-b border-slate-700 placeholder-white text-white p-3 sm:p-4 text-sm sm:text-base outline-none focus:outline-white
+                transition-all duration-300 focus:placeholder-transparent"
             />
         </div>
 
@@ -96,13 +98,15 @@ export default function Contact() {
             type="text"
             required
             placeholder="Your subject"
-            className="w-full h-12 sm:h-14 bg-[#8e808042] border-b border-slate-700 placeholder-white text-white p-3 sm:p-4 text-sm sm:text-base outline-none"
+            className="w-full h-12 sm:h-14 bg-[#8e808042] border-b border-slate-700 placeholder-white text-white p-3 sm:p-4 text-sm sm:text-base outline-none focus:outline-white
+                transition-all duration-300 focus:placeholder-transparent"
         />
 
             <textarea
             required
             placeholder="Your message"
-            className="w-full h-40 sm:h-52 resize-none bg-[#8e808042] border-b border-slate-700 placeholder-white text-white p-3 sm:p-4 text-sm sm:text-base outline-none"
+            className="w-full h-40 sm:h-52 resize-none bg-[#8e808042] border-b border-slate-700 placeholder-white text-white p-3 sm:p-4 text-sm sm:text-base outline-none focus:outline-white
+                transition-all duration-300 focus:placeholder-transparent"
             />
             <button className="font-sans font-bold border border-white bg-yellow-600 p-2 text-2xl rounded-xl" type="submit">submit</button>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import Circularbars from './Circularbars';
+import Boxes from './Boxes.jsx';
 import { LeafyGreen } from 'lucide-react';
 
 const AboutPopup = ({ showPopup, onClose }) => {
@@ -32,7 +32,7 @@ const AboutPopup = ({ showPopup, onClose }) => {
         <div className="grid md:grid-cols-2 gap-6 md:gap-10">
           {/* Left - Personal Info */}
           <div>
-            <h3 className="text-xl sm:text-2xl font-bold mb-6 mt-4">PERSONAL INFO'S</h3>
+            <h3 className="text-xl sm:text-2xl font-bold mb-6 mt-4">PERSONAL <span className="text-yellow-400">INFO'S</span></h3>
             <div className="space-y-4 text-gray-300 text-sm sm:text-base">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4">
                 <span>First Name: <span className="font-semibold text-white">Vidyardhi</span></span>
@@ -81,22 +81,21 @@ const AboutPopup = ({ showPopup, onClose }) => {
           </div>
 
           {/* Right - Stat Boxes */}
-          <div className="grid grid-cols-2 gap-4 sm:gap-6 mt-6 sm:mt-8">
-            <StatBox value="2+" label="Years of Experience" />
-            <StatBox value="10+" label="Completed Projects" />
-            <StatBox value="5+" label="Happy Clients" />
-            <StatBox value="None" label="Awards" />
+          <div className=" sm:gap-6 mt-6 sm:mt-8">
+            <p className='font-sans text-lg mt-5'>Hi, I’m Lamu Vidyardhi — a full stack  developer passionate about crafting fast, and user-focused applications across
+                web and mobile platforms. My interest in development sparked from  experimenting with backend APIs and frontend
+                design, eventually growing into real-world experience across startups and large organizations.</p>
           </div>
         </div>
 
         {/* My skills */}
-        <h1 className='text-2xl sm:text-3xl mb-10 font-sans font-extrabold text-center mt-16'>My Skills</h1>
+        <h1 className='text-2xl sm:text-3xl mb-10 font-sans font-extrabold text-center mt-12'>My <span className="text-yellow-400">Skills</span></h1>
         <div className="flex justify-center p-4 sm:p-6">
-          <Circularbars />
+          <Boxes />
         </div>
 
         {/* Education details */}
-        <h1 className='font-sans font-extrabold text-2xl sm:text-3xl text-center mt-10 mb-10'>Education Details</h1>
+        <h1 className='font-sans font-extrabold text-2xl sm:text-3xl text-center mt-8 mb-10'>Education <span className="text-yellow-400">Details</span></h1>
         <div className='space-y-12'>
           {[{
             year: '2018-SSC 10TH',
@@ -113,7 +112,7 @@ const AboutPopup = ({ showPopup, onClose }) => {
           }].map((edu, index) => (
             <div key={index} className='relative pl-16 sm:pl-20'>
               <span className='absolute left-0 top-0 w-10 h-10 sm:w-12 sm:h-12 p-2 sm:p-3 rounded-full bg-yellow-500'><LeafyGreen /></span>
-              <div className='border-l-2 border-[#5e5d5d] absolute h-full top-5 sm:top-6 left-5 sm:left-6'></div>
+              <div className='border-l-2 border-[#5e5d5d] absolute h-full top-10 sm:top-6 left-5 sm:left-6'></div>
               <div className='ml-2 sm:ml-4'>
                 <h1 className='inline-block px-4 py-2 rounded-xl bg-[#ffffff20] font-sans font-extrabold text-sm sm:text-base'>{edu.year}</h1>
                 <h2 className='font-sans font-bold mt-3 sm:mt-4 mb-2 text-sm sm:text-base'>{edu.school}</h2>
@@ -127,12 +126,5 @@ const AboutPopup = ({ showPopup, onClose }) => {
   );
 };
 
-// Stat Box Component
-const StatBox = ({ value, label }) => (
-  <div className="border border-gray-700 p-4 sm:p-6 rounded text-center bg-[#111]/50">
-    <div className="text-yellow-400 text-2xl sm:text-4xl font-bold mb-1 sm:mb-2">{value}</div>
-    <div className="text-white text-xs sm:text-sm uppercase tracking-wide">{label}</div>
-  </div>
-);
 
 export default AboutPopup;

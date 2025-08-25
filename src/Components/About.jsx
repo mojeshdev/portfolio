@@ -1,5 +1,5 @@
 import React from 'react';
-import Circularbars from './Circularbars';
+import Boxes from "./Boxes.jsx";
 import { LeafyGreen } from 'lucide-react';
 
 export default function About() {
@@ -19,7 +19,7 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-6 mb-16">
         {/* Left - Personal Info */}
         <div>
-            <h3 className="text-2xl font-bold mb-6">PERSONAL INFO'S</h3>
+            <h3 className="text-2xl font-bold mb-6">PERSONAL <span className='text-yellow-400 font-bold'>INFO'S</span> </h3>
             <div className="space-y-6 text-gray-300 text-base">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <InfoItem label="First Name" value="Vidyardhi" />
@@ -49,18 +49,17 @@ export default function About() {
         </div>
 
         {/* Right - Stat Boxes */}
-        <div className="grid grid-cols-2 gap-6 w-full max-w-xl mx-auto md:mx-0">
-            <StatBox value="2+" label="Years of Experience" />
-            <StatBox value="10+" label="Completed Projects" />
-            <StatBox value="5+" label="Happy Clients" />
-            <StatBox value="NONE" label="Awards" />
+        <div className=" w-full max-w-xl mx-auto md:mx-0">
+            <p className='font-sans text-xl mt-5'>Hi, I’m Lamu Vidyardhi — a full stack  developer passionate about crafting fast, and user-focused applications across
+                web and mobile platforms. My interest in development sparked from  experimenting with backend APIs and frontend
+                design, eventually growing into real-world experience across startups and large organizations.</p>
         </div>
         </div>
 
       {/* My Skills */}
-        <h1 className="text-3xl font-extrabold text-center mb-12">My <span className='font-sans text-yellow-400'>Skills</span></h1>
+        <h1 className="text-3xl font-extrabold text-center mb-8">My <span className='font-sans text-yellow-400'>Skills</span></h1>
         <div className="flex justify-center mb-16">
-        <Circularbars />
+        <Boxes />
         </div>
 
       {/* Education Details */}
@@ -94,13 +93,7 @@ const InfoItem = ({ label, value, color = "text-white" }) => (
     <span>{label}: <span className={`font-semibold ${color}`}>{value}</span></span>
 );
 
-// Stat Box Component
-const StatBox = ({ value, label }) => (
-    <div className="border border-gray-700 p-6 rounded text-center bg-[#111]/50">
-    <div className="text-yellow-400 text-3xl md:text-4xl font-bold mb-2">{value}</div>
-    <div className="text-white text-sm uppercase tracking-wide">{label}</div>
-    </div>
-);
+
 
 // Education Item Component
 const EducationCard = ({ year, level, institution, description }) => (
