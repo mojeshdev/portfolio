@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaGithub } from "react-icons/fa"
-import { FolderClosed, Ban } from 'lucide-react';
+import { FolderClosed } from 'lucide-react';
 
 const projects = [
 {
@@ -17,7 +17,7 @@ const projects = [
 {
     title: "E-commerce UI",
     link: "https://e-commerce-cyan-ten-95.vercel.app/",
-    description: "This E-commerce website allows visitors can see the frontend UI basic React and tailwind project",
+    description: "This project is a frontend e-commerce application built using React and Tailwind CSS. It provides visitors with a clean and responsive user interface, showcasing product listings, a shopping cart section, and a structured layout to demonstrate the core functionalities of a modern e-commerce platform.",
     skills: "React JS, TailwindCSS"
 }
 ]
@@ -70,10 +70,10 @@ const Projects = () => {
         </div>
     </section>
     <div>
-        <h1 className='font-sans font-extrabold text-2xl text-center mb-4 '>Available for select freelance opportunities</h1>
+        <h1 className='font-sans font-extrabold text-2xl text-gray-400 text-center mb-4 '>Available for select freelance opportunities</h1>
         <p className='font-sans text-sm text-center text-gray-500 mb-10'>Have an exciting project you need help with? Send me an email.</p>
         <NavLink className="text-sans underline flex items-center justify-center text-xl text-green-600 mb-20" to="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">mojeshlam823@gmail.com</NavLink>
-        <p className='flex flex-wrap text-gray-600 items-center justify-center '><Ban  /> 2025. Made with passion by Lamu Vidyardhi.</p>
+        <p className='flex flex-wrap text-gray-600 items-center justify-center '> 2025. Made with passion by Lamu Vidyardhi.</p>
     </div>
 
     </div>

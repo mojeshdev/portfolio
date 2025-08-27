@@ -1,5 +1,5 @@
 import React from 'react';
-import Boxes from "./Boxes.jsx";
+import Boxes from "../Components/Boxes.jsx";
 import { LeafyGreen } from 'lucide-react';
 
 export default function About() {

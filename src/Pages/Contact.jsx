@@ -1,6 +1,6 @@
 import { MapPin, Mail, Phone } from "lucide-react";
-import Tooltip from "./Tooltip.jsx";
-import Card from "./Card.jsx";
+import Tooltip from "../Components/Tooltip.jsx";
+import Card from "../Components/Card.jsx";
 
 export default function Contact() {
     return (
@@ -24,7 +24,7 @@ export default function Contact() {
             </h1>
             <p className="text-gray-300 mb-8 text-sm sm:text-base text-center md:text-left">
             Feel free to get in touch with me. I am always open to discussing
-            new projects, creative ideas or opportunities to be part of your
+            new projects, <br></br>creative ideas or opportunities to be part of your
             visions.
             </p>
 
@@ -108,7 +108,7 @@ export default function Contact() {
             className="w-full h-40 sm:h-52 resize-none bg-[#8e808042] border-b border-slate-700 placeholder-white text-white p-3 sm:p-4 text-sm sm:text-base outline-none focus:outline-white
                 transition-all duration-300 focus:placeholder-transparent"
             />
-            <button className="font-sans font-bold border border-white bg-yellow-600 p-2 text-2xl rounded-xl" type="submit">submit</button>
+            <button className="font-sans font-bold border bg-yellow-600 p-2 text-2xl rounded-xl" type="submit">submit</button>
         </div>
         </div>
 
